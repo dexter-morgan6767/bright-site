@@ -1,4 +1,4 @@
-/* БАЗА */
+
 body {
     margin: 0;
     font-family: 'Manrope', sans-serif;
@@ -6,14 +6,14 @@ body {
     color: black;
 }
 
-/* ЗАГОЛОВКИ */
+
 h1, h2, .logo {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     letter-spacing: 1px;
 }
 
-/* HEADER */
+
 .header {
     background: black;
     color: white;
@@ -75,7 +75,7 @@ h1, h2, .logo {
     background: #ff9f1c;
 }
 
-/* АНИМАЦИЯ БЛОКА */
+
 .hero-box {
     width: 320px;
     height: 220px;
@@ -90,7 +90,7 @@ h1, h2, .logo {
     100% { transform: translateY(0); }
 }
 
-/* MAIN */
+
 .section {
     display: none;
     padding: 30px;
@@ -100,7 +100,6 @@ h1, h2, .logo {
     display: block;
 }
 
-/* ДНИ */
 .days {
     margin-bottom: 20px;
 }
@@ -119,7 +118,7 @@ h1, h2, .logo {
     background: #ff9f1c;
 }
 
-/* КАРТОЧКИ */
+
 .cards {
     display: none;
     gap: 20px;
@@ -130,7 +129,7 @@ h1, h2, .logo {
     display: flex;
 }
 
-/* КАРТОЧКА УРОКА */
+
 .card {
     width: 200px;
     height: 120px;
@@ -149,13 +148,13 @@ h1, h2, .logo {
     box-shadow: 0 5px 0 rgba(0,0,0,0.2);
 }
 
-/* ХОВЕР ЭФФЕКТ */
+
 .card:hover {
     transform: scale(1.1) rotate(2deg);
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
-/* ЦВЕТА ПРЕДМЕТОВ */
+
 .math { background: #ffd166; }
 .russian { background: #ef476f; color: white; }
 .physics { background: #06d6a0; }
@@ -168,18 +167,16 @@ h1, h2, .logo {
 .history { background: #f1fa8c; }
 .geography { background: #a8dadc; }
 
-/* ПРЕДМЕТЫ (секция) */
 #subjects .cards {
     display: flex;
 }
 
-/* ABOUT */
 #about {
     font-size: 18px;
     max-width: 600px;
 }
 
-/* FOOTER */
+
 .footer {
     background: black;
     color: white;
@@ -231,14 +228,14 @@ h1, h2, .logo {
     text-align: center;
 }
 
-/* добавим "иконки" через before */
+
 .card::before {
     content: "📘";
     font-size: 30px;
     margin-bottom: 10px;
 }
 
-/* разные предметы — разные иконки */
+
 .math::before { content: "➗"; }
 .russian::before { content: "✍️"; }
 .physics::before { content: "⚡"; }
