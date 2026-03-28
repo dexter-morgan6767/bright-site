@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qazguu School</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+    <div class="logo">Qazguu School</div>
+
+    <nav class="main-nav">
+        <button onclick="showSection('schedule')">Расписание</button>
+        <button onclick="showSection('subjects')">Предметы</button>
+        <button onclick="showSection('about')">О школе</button>
+    </nav>
+</header>
+<div class="decor decor-top"></div>
+<section class="hero">
+    <div class="hero-text">
+        <h1>РАСПИСАНИЕ<br>УРОКОВ</h1>
+        <p>Удобный способ просмотра занятий</p>
+        <button onclick="showSection('schedule')">Открыть</button>
+    </div>
+
+    <div class="hero-image">
+    <img src="./img/KazGUU-1.jpeg" alt="school">
+</div>
+</section>
+
+<main>
+
+<section id="schedule" class="section active">
+
+    <div class="days">
+        <button onclick="showDay('monday')">Пн</button>
+        <button onclick="showDay('tuesday')">Вт</button>
+        <button onclick="showDay('wednesday')">Ср</button>
+        <button onclick="showDay('thursday')">Чт</button>
+        <button onclick="showDay('friday')">Пт</button>
+    </div>
+
+    <div id="monday" class="cards active">
+        <div class="card math">1. Математика</div>
+        <div class="card russian">2. Русский</div>
+        <div class="card physics">3. Физика</div>
+        <div class="card history">4. История</div>
+    </div>
+
+    <div id="tuesday" class="cards">
+        <div class="card english">1. Английский</div>
+        <div class="card biology">2. Биология</div>
+        <div class="card geography">3. География</div>
+    </div>
+
+    <div id="wednesday" class="cards">
+        <div class="card math">1. Математика</div>
+        <div class="card cs">2. Информатика</div>
+        <div class="card pe">3. Физкультура</div>
+    </div>
+
+    <div id="thursday" class="cards">
+        <div class="card chemistry">1. Химия</div>
+        <div class="card russian">2. Русский</div>
+        <div class="card literature">3. Литература</div>
+    </div>
+
+    <div id="friday" class="cards">
+        <div class="card history">1. История</div>
+        <div class="card geography">2. География</div>
+        <div class="card pe">3. Физкультура</div>
+    </div>
+
+</section>
+
+<section id="subjects" class="section">
+    <h2>Предметы</h2>
+    <div class="cards active">
+        <div class="card math">Математика</div>
+        <div class="card russian">Русский язык</div>
+        <div class="card english">Английский</div>
+        <div class="card physics">Физика</div>
+        <div class="card chemistry">Химия</div>
+        <div class="card biology">Биология</div>
+        <div class="card history">История</div>
+        <div class="card geography">География</div>
+        <div class="card cs">Информатика</div>
+    </div>
+</section>
+
+<section id="about" class="section">
+    <h2>О школе</h2>
+    <p>
+        Это школьный портал для просмотра расписания, предметов и общей информации.
+    </p>
+</section>
+
+</main>
+
+<footer class="footer">
+    <p>© 2026 Школа Qazguu School | Контакты: school@email.com</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
